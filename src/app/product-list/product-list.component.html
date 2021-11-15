@@ -4,6 +4,7 @@
   <h3>
     <a [title]="product.name + ' details'">
       {{ product.name }}
+      [routerLink]="['/products',product.id]"
     </a>
   </h3>
   <p *ngIf="product.description">Description: {{ product.description }}</p>
